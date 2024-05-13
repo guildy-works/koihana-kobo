@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     typescript: {
         typeCheck: true,
         strict: true,
-
     },
     app: {
         head: {
@@ -15,13 +14,16 @@ export default defineNuxtConfig({
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { hid: 'robots', name: 'robots', content: 'noindex' }
+            ],
+            link: [
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sen&display=swap' }
             ]
         },
         baseURL: '/',
     },
     imports: {
         dirs: [
-            "components/**",
+            "./src/components/**",
         ],
     },
     image: {

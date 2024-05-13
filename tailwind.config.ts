@@ -4,12 +4,14 @@ const config: Config = {
     content: ["./**/*.vue"],
     theme: {
         screens: {
-            sm: '480px',
-            md: '768px',
-            lg: '976px',
+            sm: '600px',
+            md: '960px',
+            lg: '1240px',
             xl: '1440px',
         },
-
+        fontFamily: {
+            sans: ['Noto Sans JP', 'sans-serif'],
+        },
         colors: {
             color1: '#103132',
             color2: '#617b7d',
@@ -22,6 +24,5 @@ const config: Config = {
     },
     plugins: [],
 }
-
 
 export default config

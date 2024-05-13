@@ -10,20 +10,24 @@ import { computed } from 'vue';
 export default defineComponent({
     props: {
         direction: {
-            type: String,
-            default: 'horizontal' // or 'horizontal',
+            type: String as () => 'horizontal' | 'vertical',
+            default: 'vertical',
         },
         spacing: {
             type: String,
             default: '4' // Default spacing using Tailwind's spacing scale
         },
         align: {
-            type: String,
-            default: 'start' // or 'center', 'end', 'baseline', 'stretch'
+            type: String as () => 'start' | 'center' | 'end' | 'baseline' | 'stretch',
+            default: 'centre' // or 'center', 'end', 'baseline', 'stretch'
         },
         justify: {
-            type: String,
-            default: 'start' // or 'center', 'end', 'between', 'around'
+            type: String as () => 'start' | 'center' | 'end' | 'between' | 'around',
+            default: 'center' // or 'center', 'end', 'between', 'around'
+        },
+        wrap: {
+            type: Boolean,
+            default: false,
         }
     },
     setup(props) {
@@ -32,7 +36,8 @@ export default defineComponent({
             props.direction === 'vertical' ? 'flex-col' : 'flex-row',
             `space-${props.spacing}`,
             `items-${props.align}`,
-            `justify-${props.justify}`
+            `justify-${props.justify}`,
+            props.wrap ? 'flex-wrap' : 'flex-nowrap'
         ]);
 
         return {
