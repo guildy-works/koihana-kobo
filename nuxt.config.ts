@@ -3,6 +3,11 @@ export default defineNuxtConfig({
     ssr: true,
     devtools: { enabled: true },
     srcDir: 'src',
+    typescript: {
+        typeCheck: true,
+        strict: true,
+
+    },
     app: {
         head: {
             htmlAttrs: { lang: 'ja', prefix: 'og: <https://ogp.me/ns#>' },
