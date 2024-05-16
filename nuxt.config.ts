@@ -16,7 +16,8 @@ export default defineNuxtConfig({
                 { hid: 'robots', name: 'robots', content: 'noindex' }
             ],
             link: [
-                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sen&display=swap' }
+                { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sen&display=swap' },
+                { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" }
             ]
         },
         baseURL: '/',

@@ -10,7 +10,9 @@ const config: Config = {
             xl: '1440px',
         },
         fontFamily: {
-            sans: ['Noto Sans JP', 'sans-serif'],
+            sans: ['Zen Old Mincho', 'sans-serif'],
+            serif: ['Zen Old Mincho', 'sans-serif'],
+            body: "sans",
         },
         colors: {
             color1: '#103132',

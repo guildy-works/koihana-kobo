@@ -1,6 +1,6 @@
 <template>
     <Box>
-        <h1 class="m-0 text-4xl">{{ title }}</h1>
+        <h1 class="m-0 text-4xl font-serif">{{ title }}</h1>
         <svg width="338" height="25" viewBox="0 0 338 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.66">
                 <g opacity="0.8">

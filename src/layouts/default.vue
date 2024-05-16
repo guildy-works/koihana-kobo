@@ -7,15 +7,13 @@
             <slot />
         </main>
         <footer class="min-h-80 bg-color6">
-            <Box class="p-5 sm:p-12 flex-wrap" justify="strech">
+            <Box class="p-5 sm:p-12 flex-wrap">
                 <Box class="flex-1" justify="center">
-                    <NuxtImg src="恋華つむぎ.svg"  />
-
-
+                    <NuxtImg src="恋華つむぎ.svg" />
                 </Box>
 
                 <Logo />
-                <div class="flex-1"  />
+                <div class="flex-1" />
             </Box>
         </footer>
     </div>
