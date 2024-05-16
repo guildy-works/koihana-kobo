@@ -40,6 +40,8 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@vueuse/nuxt',
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        "vue3-carousel-nuxt",
     ],
+    css: ["~/styles/style.scss"],
 })

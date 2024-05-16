@@ -17,9 +17,12 @@
         "@vueuse/nuxt": "^10.9.0",
         "nuxt": "^3.11.2",
         "vue": "^3.4.21",
-        "vue-router": "^4.3.0"
+        "vue-router": "^4.3.0",
+        "vue3-carousel-nuxt": "^1.1.1"
     },
     "devDependencies": {
+        "sass": "^1.77.1",
+        "sass-loader": "^14.2.1",
         "typescript": "^5.4.5",
         "vue-tsc": "^1.8.27"
     }
