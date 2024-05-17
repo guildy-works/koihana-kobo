@@ -13,7 +13,7 @@
                 </Box>
 
                 <Logo />
-                <div class="flex-1" />
+                <div class="flex-1"/>
             </Box>
         </footer>
     </div>
