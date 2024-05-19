@@ -2,12 +2,14 @@
     "name": "nuxt-app",
     "private": true,
     "type": "module",
+    "repository": "https://github.com/guildy-works/koihana-kobo",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "postinstall": "nuxt prepare"
+        "postinstall": "nuxt prepare",
+        "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
     },
     "dependencies": {
         "@nuxt/image": "^1.6.0",
@@ -21,6 +23,7 @@
         "vue3-carousel-nuxt": "^1.1.1"
     },
     "devDependencies": {
+        "gh-pages": "^6.1.1",
         "sass": "^1.77.1",
         "sass-loader": "^14.2.1",
         "typescript": "^5.4.5",

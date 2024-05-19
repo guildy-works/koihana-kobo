@@ -23,6 +23,7 @@ hr,
 figure,
 p,
 pre {
+    @apply select-none;
   margin: 0;
 }
 
@@ -30,7 +31,13 @@ h1 {
     @apply text-4xl font-bold;
 }
 
+p{
+    @apply select-auto;
+    @apply text-sm whitespace-pre-line leading-6 tracking-wider;
+}
+
 .body1 {
     @apply text-4xl font-bold;
 }
+
 

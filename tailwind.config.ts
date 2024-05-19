@@ -5,9 +5,9 @@ const config: Config = {
     theme: {
         screens: {
             sm: '600px',
-            md: '960px',
-            lg: '1240px',
-            xl: '1440px',
+            md: '1240px',
+            lg: '1560px',
+            xl: '1920px',
         },
         fontFamily: {
             sans: ['Zen Old Mincho', 'sans-serif'],
