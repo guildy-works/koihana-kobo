@@ -7,7 +7,7 @@
                     fill="#32728A"  />
             </g>
         </svg>
-        <h1 class="m-0  text-4xl font-serif">{{ title }}</h1>
+        <h1 class="m-0 text-4xl font-serif">{{ title }}</h1>
     </Box>
 </template>
 <script lang="ts" setup>

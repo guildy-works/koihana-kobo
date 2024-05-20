@@ -7,7 +7,8 @@ body {
 }
 
 *::selection {
-    @apply text-color1 bg-color6;
+    @apply text-color1;
+    background: #6d9d9a75;
 }
 
 blockquote,
@@ -23,7 +24,7 @@ hr,
 figure,
 p,
 pre {
-    @apply select-none;
+    @apply  text-color1;
     margin: 0;
 }
 
@@ -36,6 +37,12 @@ p {
     @apply text-sm whitespace-pre-line leading-6 tracking-wider;
 }
 
-.body1 {
-    @apply text-4xl font-bold;
+button,
+.button {
+    @apply px-4 py-2 rounded-xl  text-center font-bold;
+}
+
+img{
+    -webkit-user-drag: none;
+    user-select: none;
 }

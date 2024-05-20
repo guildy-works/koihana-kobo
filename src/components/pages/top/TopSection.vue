@@ -2,13 +2,6 @@
     <Box class="relative w-full min-h-lvh justify-center items-center overflow-hidden">
         <Box direction="vertical" class="justify-center max-w-screen-xl  items-start p-4 sm:p-8 md:p-16 lg:p-24">
 
-            <Box direction="horizontal" class="ml-4 lg:ml-48 h-10 lg:h-20 items-center">
-                <Box>
-                    <Logo class="" />
-                </Box>
-                <TitleLine class="ml-14 mb-2" :title="$t('恋華工房')" />
-            </Box>
-
             <Box direction="horizontal" class="items-center justify-evenly gap-8 mt-12 flex-wrap">
                 <Box class="w-full lg:w-1/2 lg:h-full max-w-lg items-center">
                     <Box class="mr-12 items-center">
@@ -28,7 +21,10 @@
                 <!-- Slide show -->
                 <Box class="w-full lg:w-1/2">
                     <Carousel :items-to-show="1" :wrap-around="true" class="w-full">
-                        <Slide v-for="slide in 10" :key="slide">
+                        <Slide :key="0">
+                            <nuxt-img src="/top.jpg" alt="トップイメージ" style="width: 100%;" sizes="960px" />
+                        </Slide>
+                        <Slide :key="1">
                             <nuxt-img src="/top.jpg" alt="トップイメージ" style="width: 100%;" sizes="960px" />
                         </Slide>
                         <template #addons>
