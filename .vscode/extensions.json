@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "pucelle.vscode-css-navigation",
+        "Vue.volar",
+        "bradlc.vscode-tailwindcss",
+        "mrmlnc.vscode-scss",
+        "sibiraj-s.vscode-scss-formatter",
+        "esbenp.prettier-vscode",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+        "bierner.markdown-mermaid",
+        "yzhang.markdown-all-in-one",
+        "Zignd.html-css-class-completion"
+    ]
+}
