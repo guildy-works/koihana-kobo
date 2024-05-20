@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     @apply text-color1;
 }
 
-*::selection{
+*::selection {
     @apply text-color1 bg-color6;
 }
 
@@ -24,14 +24,14 @@ figure,
 p,
 pre {
     @apply select-none;
-  margin: 0;
+    margin: 0;
 }
 
 h1 {
     @apply text-4xl font-bold;
 }
 
-p{
+p {
     @apply select-auto;
     @apply text-sm whitespace-pre-line leading-6 tracking-wider;
 }
@@ -39,5 +39,3 @@ p{
 .body1 {
     @apply text-4xl font-bold;
 }
-
-
