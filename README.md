@@ -1,75 +1,22 @@
-# Nuxt 3 Minimal Starter
+# 恋華工房公式サイト
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[https://harakiyo.jp/](https://harakiyo.jp/)
 
-## Setup
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
+## サイトマップ
 
-# pnpm
-pnpm install
+Baseショップ
+[https://koihana.base.shop/](https://koihana.base.shop/)
 
-# yarn
-yarn install
+```mermaid
 
-# bun
-bun install
+graph TD;
+    A[恋華工房] --> B[HOME];
+    C[Baseショップ] --> D[ショップホーム];
+    C --> E[商品一覧];
+    C --> F[お問い合わせ];
+
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+  
