@@ -4,7 +4,7 @@
 
             <Box direction="horizontal" class="items-center justify-evenly gap-8 mt-12 flex-wrap">
                 <Box class="w-full lg:w-1/2 lg:h-full max-w-lg items-center">
-                    <Box class="mr-12 items-center">
+                    <Box class="mr-8 items-center">
                         <nuxt-img src="/salt.png" alt="Nuxt Logo" loading="lazy" sizes="200px" style="width: 160px;" />
                     </Box>
 
@@ -12,7 +12,7 @@
                         <HaraitamaheKiyometamahe />
                         <p class="tracking-wide break-words whitespace-pre mt-6 md:mt-12">
                             {{
-                                $t("各地の海水を汲み上げ精製した塩を配合し、\n\nココロとカラダの浄化のための\n\n八百万のチカラを宿したバスソルトです。\n\nお好きな神様や神宮の地を選んで、\n\n浄化にお使い下さい。")
+                                $t("各地の海水を汲み上げ精製した塩を配合し、\nココロとカラダの浄化のための\n八百万のチカラを宿したバスソルトです。\nお好きな神様や神宮の地を選んで、\n浄化にお使い下さい。")
                             }}
                         </p>
                     </Box>
