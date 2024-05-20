@@ -2,8 +2,9 @@
     <Box class="items-center justify-center overflow-x-hidden">
         <PagesTopSection />
         <WavePanel class="w-full justify-center">
-            <Box class="justify-center w-full flex-wrap sm:gap-12 md:gap-24 lg:gap-32" direction="horizontal">
-                <p>
+            <Box class="p-5 justify-center items-center w-full flex-wrap sm:gap-12 md:gap-24 lg:gap-32 max-w-screen-lg"
+                direction="horizontal">
+                <p class="max-w-screen-sm w-full">
                     美しき国日本、八百萬の神<br /><br />
                     私たちの生活に寄り添う氏神様<br />
                     祓いたまへ浄めたまへの<br />
@@ -33,12 +34,13 @@
 
         </WavePanel>
 
+        <Box class="p-5 justify-center items-center w-full flex-wrap sm:gap-12 md:gap-24 lg:gap-32 max-w-screen-lg my-24 sm:my-48 md:my-64 lg:my-96"
+            direction="horizontal">
+            <Box>
 
-        <Box class="p-5 mt-6 md:mt-12 mb-48 gap-3 w-full max-w-screen-sm">
-            <HaraitamaheKiyometamahe />
-            <Box class="w-full">
-
-                <p class="mt-6 md:mt-12 w-full">
+                <HaraitamaheKiyometamahe />
+                <h2 class="mt-4">仙酔島の塩</h2>
+                <p class="max-w-screen-sm  w-full mt-4">
                     シリーズの最初は 瀬戸内海に浮かぶ<br />
                     仙酔島の天日塩を含有。<br /><br />
 
@@ -59,24 +61,14 @@
                     ヒマラヤ山脈の地層から採取したヒマラヤ岩塩お湯に溶けやすいサイズにしました。<br />
                     長い歴史と自然変動の結晶で誕生した、地球からの贈り物である岩塩を全身で体感ください。<br />
                 </p>
-                <nuxt-img src="/bottles.png" alt="トップイメージ" loading="lazy" class="w-full mt-8" sizes="620px" />
             </Box>
-
-            <a class="button bg-color1 text-color7 mt-8" href="https://koihana.base.shop/items/86245817"> 商品詳細 </a>
+            <Box>
+                <div class="flex-1" />
+                <nuxt-img src="/仙酔島.jpg" alt="仙酔島" loading="lazy" class="w-full mt-8" sizes="620px" />
+                <nuxt-img src="/bottles.png" alt="祓へたまへ浄めたまへ" loading="lazy" class="w-full mt-8" sizes="620px" />
+                <a class="button bg-color1 text-color7 mt-8" href="https://koihana.base.shop/items/86245817"> 商品詳細 </a>
+            </Box>
         </Box>
-
 
     </Box>
 </template>
-<script lang="ts">
-
-export default defineComponent({
-    setup() {
-        const hoge = "hoge hoge"
-
-        return {
-            hoge
-        }
-    }
-})
-</script>

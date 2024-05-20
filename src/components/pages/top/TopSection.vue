@@ -25,7 +25,7 @@
                             <nuxt-img src="/top.jpg" alt="トップイメージ" style="width: 100%;" sizes="960px" />
                         </Slide>
                         <Slide :key="1">
-                            <nuxt-img src="/top.jpg" alt="トップイメージ" style="width: 100%;" sizes="960px" />
+                            <nuxt-img src="/shimonada.jpg" alt="トップイメージ" style="width: 100%;" sizes="960px" />
                         </Slide>
                         <template #addons>
                             <Navigation />

@@ -1,6 +1,6 @@
 <template>
     <div id="app-layout">
-        <header class="flex overflow-hidden">
+        <header class="flex overflow-hidden items-center">
 
             <a href="/">
                 <Box direction="horizontal" class="ml-4 lg:ml-48 h-10 lg:h-20 items-center mt-auto cursor-pointer">
@@ -61,6 +61,7 @@
 
 <style scoped>
 header {
+    @apply items-center;
     position: sticky;
     top: 0;
     z-index: 1000;
