@@ -9,11 +9,31 @@
                     </Box>
 
                     <Box class="mt-6 md:mt-12">
-                        <HaraitamaheKiyometamahe />
+                        <Skew class="bg-white" :delay="600">
+                            <HaraitamaheKiyometamahe />
+                        </Skew>
+
                         <p class="tracking-wide break-words whitespace-pre mt-6 md:mt-12">
-                            {{
-                                $t("各地の海水を汲み上げ精製した塩を配合し、\nココロとカラダの浄化のための\n八百万のチカラを宿したバスソルトです。\nお好きな神様や神宮の地を選んで、\n浄化にお使い下さい。")
-                            }}
+                            <Skew class="bg-white" :delay="500">
+                                {{
+                                    $t("各地の海水を汲み上げ精製した塩を配合し、") }}
+                            </Skew>
+
+                            <Skew class="bg-white" :delay="550">
+                                {{ $t("ココロとカラダの浄化のための") }}
+                            </Skew>
+
+                            <Skew class="bg-white" :delay="580">
+                                {{ $t("八百万のチカラを宿したバスソルトです。") }}
+                            </Skew>
+
+                            <Skew class="bg-white" :delay="600">
+                                {{ $t("お好きな神様や神宮の地を選んで、") }}
+                            </Skew>
+
+                            <Skew class="bg-white" :delay="640">
+                                {{ $t("浄化にお使い下さい。") }}
+                            </Skew>
                         </p>
                     </Box>
                 </Box>

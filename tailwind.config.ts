@@ -22,6 +22,7 @@ const config: Config = {
             color5: '#6cb9be',
             color6: '#b6d1d1',
             color7: '#e1e7e7',
+            white: '#ffffff',
         },
     },
     plugins: [],

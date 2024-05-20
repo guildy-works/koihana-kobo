@@ -1,5 +1,5 @@
 <template>
-    <Box>
+    <div ref="target">
         <svg width="558" height="671" viewBox="0 0 558 671" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.5" clip-path="url(#clip0_28_926)">
                 <path
@@ -96,5 +96,57 @@
                 d="M359.765 6.80506C243.954 70.0275 152.785 90.2777 43.8251 34.34C36.2191 29.7476 7.41032 9.52153 0.792988 2.32129L45.6889 1.21015C134.786 0.12317 225.869 1.26084 314.911 4.57289L359.765 6.80506Z"
                 fill="#B6D1D1" />
         </svg>
-    </Box>
+<!--
+        <div style="position: fixed;left: 0;top: 0;"> {{ ra }}</div> -->
+    </div>
 </template>
+
+<script setup lang="ts">
+import type { UseScrollReturn } from '@vueuse/core';
+import { vScroll } from '@vueuse/components'
+
+const target = ref<HTMLElement | null>(null)
+const ra = ref({})
+
+const props = defineProps({
+    speed: {
+        type: Number,
+        default: 1
+    },
+    delay: {
+        type: Number,
+        default: 0
+    },
+    once: {
+        type: Boolean,
+        default: true
+    }
+})
+
+useResizeObserver(target, () => {
+
+})
+
+
+const { pause,  } = useIntersectionObserver(
+    target,
+    ([a], observerElement) => {
+        ra.value = a.boundingClientRect
+        observerElement.root
+    },
+    {
+        immediate: true,
+    }
+)
+const { x, y: scrollY } = useScroll(window)
+
+const yy = computed(() => {
+    console.log(target.value?.offsetTop)
+    const top = target.value?.offsetTop ?? 0
+    const clientHeight = target.value?.clientHeight ?? 0
+    return (scrollY.value)
+
+})
+
+</script>
+<style scoped></style>
