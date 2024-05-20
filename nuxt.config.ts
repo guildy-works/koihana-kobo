@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
+            title: '恋華工房',
             htmlAttrs: { lang: 'ja', prefix: 'og: <https://ogp.me/ns#>' },
             meta: [
                 { charset: 'utf-8' },
