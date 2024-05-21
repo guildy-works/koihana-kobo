@@ -21,6 +21,7 @@ export default defineNuxtConfig({
                 { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" }
             ]
         },
+        pageTransition: { name: 'page', mode: 'out-in' },
         baseURL: '/',
     },
     imports: {

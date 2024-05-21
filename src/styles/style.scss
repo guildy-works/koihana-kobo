@@ -24,7 +24,7 @@ hr,
 figure,
 p,
 pre {
-    @apply  text-color1;
+    @apply text-color1;
     margin: 0;
 }
 
@@ -42,11 +42,12 @@ button,
     @apply px-4 py-2 rounded-xl  text-center font-bold;
 }
 
-img{
+img {
     -webkit-user-drag: none;
     user-select: none;
 }
 
-.test{
+.test {
     @apply text-color1;
 }
+

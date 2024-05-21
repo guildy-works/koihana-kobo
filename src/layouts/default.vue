@@ -61,10 +61,9 @@
 
 <style scoped>
 header {
-    @apply items-center;
+    @apply items-center z-40;
     position: sticky;
     top: 0;
-    z-index: 1000;
     height: 78px;
 }
 
