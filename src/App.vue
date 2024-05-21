@@ -1,7 +1,5 @@
 <template>
     <OpeningShutter />
-    <NuxtLink href="/"> Home</NuxtLink>
-    <NuxtLink href="/calc"> About</NuxtLink>
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>
