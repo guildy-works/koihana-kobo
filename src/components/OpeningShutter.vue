@@ -5,11 +5,25 @@
     </div>
 </template>
 
+<script setup lang="ts">
+
+const emit = defineEmits({
+    load: null
+})
+
+onMounted(() => {
+    setTimeout(() => {
+        emit('load')
+    }, 2000)
+})
+
+</script>
+
 <style lang="scss" scoped>
 .shutter {
     @apply bg-color6 z-50 inset-0 fixed;
 
-    animation: byeShutter 4.6s forwards;
+    animation: byeShutter 3.6s forwards;
 
     &::before,
     &::after {
@@ -25,7 +39,7 @@
         @apply bg-color4;
         width: 100%;
         height: 0px;
-        animation: shutterOpen1 4.6s forwards;
+        animation: shutterOpen1 3.6s forwards;
     }
 
     &::after {
@@ -33,16 +47,12 @@
         height: 0;
         margin-left: -10%;
         @apply bg-color2;
-        animation: shutterOpen2 4.6s forwards;
+        animation: shutterOpen2 3.6s forwards;
     }
 
-    .logo{
-        animation: logoAnimation 4.6s forwards;
+    .logo {
+        animation: logoAnimation 3.6s forwards;
     }
-}
-
-.content {
-    animation: contentScale 2.6s forwards;
 }
 
 @keyframes logoAnimation {
