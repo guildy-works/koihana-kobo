@@ -1,7 +1,7 @@
 <template>
     <OpeningShutter @load="loaded" />
     <NuxtLayout v-if="isLoaded" class="page">
-        <NuxtPage class=" w-full h-full" />
+        <NuxtPage class="w-full h-full" />
     </NuxtLayout>
 </template>
 
@@ -9,7 +9,6 @@
 const isLoaded = ref(false)
 
 const loaded = () => {
-    console.log('emit')
     isLoaded.value = true
 }
 
@@ -29,7 +28,7 @@ const loaded = () => {
 
 .page {
     @apply w-full h-full;
-    animation: contentScale 0.4s forwards;
+    animation: contentScale 4s forwards;
     transform:  scale(0.9);
     opacity: 0;
 }
@@ -41,7 +40,7 @@ const loaded = () => {
     }
 
     100% {
-        transform: scale(0.9);
+        transform: scale(1);
         opacity: 1;
     }
 }

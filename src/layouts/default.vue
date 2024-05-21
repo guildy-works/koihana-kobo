@@ -2,14 +2,14 @@
     <div id="app-layout">
         <header class="flex overflow-hidden items-center">
 
-            <a href="/">
+            <NuxtLink href="/">
                 <Box direction="horizontal" class="ml-4 lg:ml-48 h-10 lg:h-20 items-center mt-auto cursor-pointer">
                     <Box>
                         <Logo class="" />
                     </Box>
                     <TitleLine class="ml-14 mb-2" :title="'恋華工房'" />
                 </Box>
-            </a>
+            </NuxtLink>
 
             <a href="#buttons-with-link">
                 <button

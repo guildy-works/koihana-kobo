@@ -14,7 +14,7 @@ const emit = defineEmits({
 onMounted(() => {
     setTimeout(() => {
         emit('load')
-    }, 2000)
+    }, 800)
 })
 
 </script>
@@ -23,7 +23,7 @@ onMounted(() => {
 .shutter {
     @apply bg-color6 z-50 inset-0 fixed;
 
-    animation: byeShutter 3.6s forwards;
+    animation: byeShutter 3s forwards;
 
     &::before,
     &::after {
@@ -39,7 +39,7 @@ onMounted(() => {
         @apply bg-color4;
         width: 100%;
         height: 0px;
-        animation: shutterOpen1 3.6s forwards;
+        animation: shutterOpen1 3s forwards;
     }
 
     &::after {
@@ -47,11 +47,11 @@ onMounted(() => {
         height: 0;
         margin-left: -10%;
         @apply bg-color2;
-        animation: shutterOpen2 3.6s forwards;
+        animation: shutterOpen2 3s forwards;
     }
 
     .logo {
-        animation: logoAnimation 3.6s forwards;
+        animation: logoAnimation 3s forwards;
     }
 }
 
