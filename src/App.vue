@@ -1,7 +1,7 @@
 <template>
     <OpeningShutter @load="loaded" />
-    <NuxtLayout v-if="isLoaded" class="page">
-        <NuxtPage class="w-full h-full" />
+    <NuxtLayout  class="page">
+        <NuxtPage class="w-full h-full" :hasAnimationDone="isLoaded" />
     </NuxtLayout>
 </template>
 

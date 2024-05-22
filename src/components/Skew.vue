@@ -1,12 +1,13 @@
 <template>
-    <div class="root" ref="target">
+    <div :class="{ backgroundClass: true, root: true }" ref="target">
         <slot />
 
         <div :class="{
             skew: true,
-            show: targetIsVisible
+            show: targetIsVisible && animationIn
 
-        }" :style="`transition:transform ${refTime}ms cubic-bezier(0.4, 0.41, 0.1, 0.65);transition-delay:${delay}ms`" />
+        }"
+            :style="`transition:transform ${refTime}ms cubic-bezier(0.4, 0.41, 0.1, 0.65);transition-delay:${delay}ms`" />
     </div>
 </template>
 
@@ -17,6 +18,10 @@ const refTime = ref(0)
 const isInitialized = ref(false)
 
 const props = defineProps({
+    backgroundClass: {
+        type: String,
+        default: 'bg-white'
+    },
     speed: {
         type: Number,
         default: 1
@@ -28,6 +33,11 @@ const props = defineProps({
     once: {
         type: Boolean,
         default: true
+    },
+    animationIn: {
+        type: Boolean,
+        default: false,
+        required: true
     }
 })
 

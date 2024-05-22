@@ -1,7 +1,6 @@
 <template>
     <div class="shutter">
         <nuxt-img src="/恋華工房.png" logo="恋華工房" class="logo fixed inset-0 m-auto z-50" sizes="620px" />
-
     </div>
 </template>
 
@@ -11,19 +10,18 @@ const emit = defineEmits({
     load: null
 })
 
-onMounted(() => {
-    setTimeout(() => {
-        emit('load')
-    }, 800)
-})
+onMounted(() => setTimeout(() => emit('load'), 1800))
 
 </script>
 
 <style lang="scss" scoped>
+
+$animationSpeed: 3s;
+
 .shutter {
     @apply bg-color6 z-50 inset-0 fixed;
 
-    animation: byeShutter 3s forwards;
+    animation: byeShutter $animationSpeed forwards;
 
     &::before,
     &::after {
@@ -39,7 +37,7 @@ onMounted(() => {
         @apply bg-color4;
         width: 100%;
         height: 0px;
-        animation: shutterOpen1 3s forwards;
+        animation: shutterOpen1 $animationSpeed forwards;
     }
 
     &::after {
@@ -47,11 +45,11 @@ onMounted(() => {
         height: 0;
         margin-left: -10%;
         @apply bg-color2;
-        animation: shutterOpen2 3s forwards;
+        animation: shutterOpen2 $animationSpeed forwards;
     }
 
     .logo {
-        animation: logoAnimation 3s forwards;
+        animation: logoAnimation $animationSpeed forwards;
     }
 }
 

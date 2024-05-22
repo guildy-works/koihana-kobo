@@ -9,29 +9,29 @@
                     </Box>
 
                     <Box class="mt-6 md:mt-12">
-                        <Skew class="bg-white" :delay="600">
+                        <Skew class="bg-white" :delay="600" :animationIn="hasAnimationDone">
                             <HaraitamaheKiyometamahe />
                         </Skew>
 
                         <p class="tracking-wide break-words whitespace-pre mt-6 md:mt-12">
-                            <Skew class="bg-white" :delay="500">
+                            <Skew class="bg-white" :delay="500" :animationIn="hasAnimationDone">
                                 {{
                                     $t("各地の海水を汲み上げ精製した塩を配合し、") }}
                             </Skew>
 
-                            <Skew class="bg-white" :delay="550">
+                            <Skew class="bg-white" :delay="550" :animationIn="hasAnimationDone">
                                 {{ $t("ココロとカラダの浄化のための") }}
                             </Skew>
 
-                            <Skew class="bg-white" :delay="580">
+                            <Skew class="bg-white" :delay="580" :animationIn="hasAnimationDone">
                                 {{ $t("八百万のチカラを宿したバスソルトです。") }}
                             </Skew>
 
-                            <Skew class="bg-white" :delay="600">
+                            <Skew class="bg-white" :delay="600" :animationIn="hasAnimationDone">
                                 {{ $t("お好きな神様や神宮の地を選んで、") }}
                             </Skew>
 
-                            <Skew class="bg-white" :delay="640">
+                            <Skew class="bg-white" :delay="640" :animationIn="hasAnimationDone">
                                 {{ $t("浄化にお使い下さい。") }}
                             </Skew>
                         </p>
@@ -63,3 +63,12 @@
     </Box>
 
 </template>
+
+<script setup>
+defineProps({
+    hasAnimationDone: {
+        type: Boolean,
+        default: false
+    },
+})
+</script>
