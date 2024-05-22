@@ -19,4 +19,15 @@ graph TD;
 
 ```
 
-  
+## アカウント
+
+#### ドメイン
+
+お名前
+harakiyo.jp
+
+
+#### Google Search and Analytics
+
+koihana.kobo@gmail.com
+
