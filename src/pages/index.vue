@@ -1,6 +1,6 @@
 <template>
     <Box class="items-center justify-center overflow-x-hidden">
-        <PagesTopSection :has-animation-done="hasAnimationDone" />
+        <TopSection :has-animation-done="hasAnimationDone" />
         <WavePanel class="w-full justify-center">
             <Box class="p-5 justify-center items-center w-full flex-wrap sm:gap-12 md:gap-24 lg:gap-32 max-w-screen-lg"
                 direction="horizontal">

@@ -7,6 +7,15 @@ export default defineNuxtConfig({
         typeCheck: true,
         strict: true,
     },
+    components: {
+        global: true,
+        dirs: [
+            '~/components/utils',
+            '~/components/pages',
+             '~/components',
+
+        ]
+    },
     app: {
         head: {
             title: '恋華工房',
@@ -24,6 +33,7 @@ export default defineNuxtConfig({
         },
         pageTransition: { name: 'page', mode: 'out-in' },
         baseURL: '/',
+
     },
     imports: {
         dirs: [
