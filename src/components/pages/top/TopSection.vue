@@ -5,7 +5,11 @@
             <Box direction="horizontal" class="items-center justify-evenly gap-8 mt-12 flex-wrap">
                 <Box class="w-full lg:w-1/2 lg:h-full max-w-lg items-center">
                     <Box class="mr-8 items-center">
-                        <nuxt-img src="/salt.png" alt="Nuxt Logo" loading="lazy" sizes="200px" style="width: 160px;" />
+                        <FadeAndSlide :delay="0" :animationIn="hasAnimationDone">
+                            <nuxt-img src="/salt.png" alt="Nuxt Logo" loading="lazy" sizes="200px"
+                                style="width: 160px;" />
+                        </FadeAndSlide>
+
                     </Box>
 
                     <Box class="mt-6 md:mt-12">

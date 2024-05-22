@@ -14,7 +14,8 @@ export default defineNuxtConfig({
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'robots', name: 'robots', content: 'noindex' }
+                { name: 'description', content: '各地の海水を汲み上げ精製した塩を配合し、バスソルトをはじめとしたココロとカラダの浄化のための八百万のチカラを宿した商品を販売しています。お好きな神様や神宮の地を選んで、浄化にお使い下さい。' },
+                { name: 'keywords', content: '恋華工房, バスソルト, 仙酔島, 塩' }
             ],
             link: [
                 { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Sen&display=swap' },
@@ -33,6 +34,9 @@ export default defineNuxtConfig({
         format: ['webp'],
         dir: 'assets/images',
     },
+    gtag: {
+        id: 'G-LSB3VKYC87',
+    },
     i18n: {
         locales: ['en', 'ja'],
         defaultLocale: 'ja',
@@ -44,6 +48,7 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         '@nuxtjs/i18n',
         "vue3-carousel-nuxt",
+        "nuxt-gtag"
     ],
     css: ["~/styles/style.scss"],
 })

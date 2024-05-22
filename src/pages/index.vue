@@ -1,10 +1,10 @@
 <template>
     <Box class="items-center justify-center overflow-x-hidden">
-        <PagesTopSection :has-animation-done="hasAnimationDone"/>
+        <PagesTopSection :has-animation-done="hasAnimationDone" />
         <WavePanel class="w-full justify-center">
             <Box class="p-5 justify-center items-center w-full flex-wrap sm:gap-12 md:gap-24 lg:gap-32 max-w-screen-lg"
                 direction="horizontal">
-                <p class="max-w-screen-sm w-full" >
+                <p class="max-w-screen-sm w-full">
                     <Skew class="bg-color6" animationIn>
                         祓へたまへ浄めたまへ
                     </Skew>
@@ -99,8 +99,15 @@
             </Box>
             <Box class="max-w-screen-sm  w-full ">
                 <div class="flex-1" />
-                <nuxt-img src="/仙酔島.jpg" alt="仙酔島" loading="lazy" class="w-full mt-8" sizes="620px" />
-                <nuxt-img src="/bottles.png" alt="祓へたまへ浄めたまへ" loading="lazy" class="w-full mt-8" sizes="620px" />
+
+                <FadeAndSlide :delay="0" animationIn class="w-full mt-8 flex-grow">
+                    <nuxt-img src="/仙酔島.jpg" alt="仙酔島" class="w-full" sizes="620px" />
+                </FadeAndSlide>
+
+                <FadeAndSlide :delay="0" animationIn class="w-full mt-8">
+                    <nuxt-img src="/bottles.png" alt="祓へたまへ浄めたまへ" class="w-full" sizes="620px" />
+                </FadeAndSlide>
+
                 <a class="button bg-color1 text-color7 mt-8" href="https://koihana.base.shop/items/86245817"> 商品詳細 </a>
             </Box>
         </Box>
@@ -110,7 +117,7 @@
 <script setup>
 defineProps({
     hasAnimationDone: {
-        type:Boolean,
+        type: Boolean,
         default: false
     },
 })

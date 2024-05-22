@@ -38,15 +38,14 @@ const props = defineProps({
         type: Boolean,
         default: false,
         required: true
-    }
+    },
 })
 
 useResizeObserver(target, () => {
     const width = target.value?.getBoundingClientRect().width;
     if (width) {
         // width / 100px
-        const w = width / 100;
-        const t = Math.floor(300 * w * props.speed);
+        const t = Math.floor(width * props.speed * 4);
         if (t !== refTime.value) {
             refTime.value = t
         }
